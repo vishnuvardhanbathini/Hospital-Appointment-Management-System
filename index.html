@@ -3,157 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Appointment Management System</title>
+    <title>MediCare - Hospital Appointment Management</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            🏥 MediCare
+<header>
+    <div class="logo">
+        <div class="logo-icon">✚</div>
+        <div>
+            <h2>MediCare</h2>
+            <p>Hospital Management</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#patients">Patients</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointments">Appointments</a>
+        <a href="#history">History</a>
+    </nav>
+
+    <button class="header-btn">Emergency</button>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            ● Healthcare Management Platform
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="patient.html">Patients</a>
-            <a href="doctor.html">Doctors</a>
-            <a href="appointment.html">Appointments</a>
-            <a href="history.html">History</a>
-        </nav>
-    </header>
+        <h1>
+            Your Health,<br>
+            <span>Our Priority.</span>
+        </h1>
 
-    <section class="hero">
-        <div class="hero-text">
-            <p class="tag">SMART HEALTHCARE MANAGEMENT</p>
+        <p>
+            A modern hospital appointment management system
+            designed to make healthcare simple, organized,
+            and accessible.
+        </p>
 
-            <h1>
-                Hospital Appointment
-                <span>Management System</span>
-            </h1>
+        <div class="hero-buttons">
+            <a href="#appointments" class="main-btn">
+                Book Appointment →
+            </a>
 
-            <p class="description">
-                A simple and efficient platform to manage patients,
-                doctors and hospital appointments in one place.
-            </p>
+            <a href="#doctors" class="outline-btn">
+                Find a Doctor
+            </a>
+        </div>
 
-            <div class="buttons">
-                <a href="appointment.html" class="primary-btn">
-                    Book Appointment
-                </a>
+        <div class="trust">
+            <div class="avatars">
+                👨‍⚕️ 👩‍⚕️ 👨‍⚕️
+            </div>
 
-                <a href="doctor.html" class="secondary-btn">
-                    View Doctors
-                </a>
+            <div>
+                <strong>Trusted Healthcare</strong>
+                <span>Professional medical management</span>
             </div>
         </div>
 
-        <div class="hero-card">
-            <div class="hospital-icon">🏥</div>
-            <h2>Healthcare Made Simple</h2>
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="circle"></div>
+
+        <div class="doctor-card">
+
+            <div class="doctor-photo">
+                👩‍⚕️
+            </div>
+
+            <div>
+                <h3>Dr. Sarah Wilson</h3>
+                <p>Cardiology Specialist</p>
+
+                <div class="available">
+                    <span></span>
+                    Available Today
+                </div>
+            </div>
+
+        </div>
+
+        <div class="appointment-card">
+            <div class="small-icon">📅</div>
+            <div>
+                <strong>Next Appointment</strong>
+                <p>Today · 10:30 AM</p>
+            </div>
+        </div>
+
+        <div class="heart">
+            ♥
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="stats">
+
+    <div>
+        <strong>500+</strong>
+        <span>Patients Served</span>
+    </div>
+
+    <div>
+        <strong>50+</strong>
+        <span>Expert Doctors</span>
+    </div>
+
+    <div>
+        <strong>20+</strong>
+        <span>Medical Departments</span>
+    </div>
+
+    <div>
+        <strong>24/7</strong>
+        <span>Healthcare Support</span>
+    </div>
+
+</section>
+
+
+<section class="section" id="patients">
+
+    <div class="section-heading">
+        <span>01 · PATIENT SERVICES</span>
+        <h2>Patient Registration</h2>
+        <p>
+            Manage patient information quickly and securely.
+        </p>
+    </div>
+
+    <div class="patient-area">
+
+        <div class="service-card large">
+
+            <div class="service-icon blue">♙</div>
+
+            <h3>New Patient Registration</h3>
+
             <p>
-                Manage appointments and patient information
-                quickly and efficiently.
+                Register new patients and maintain their
+                personal information and healthcare details.
             </p>
 
-            <div class="status">
-                <span></span>
-                System Available
+            <div class="form-row">
+                <input type="text" placeholder="Patient Name">
+                <input type="text" placeholder="Phone Number">
             </div>
+
+            <div class="form-row">
+                <input type="email" placeholder="Email Address">
+
+                <select>
+                    <option>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <button class="form-btn">
+                Register Patient
+            </button>
+
         </div>
-    </section>
 
-    <section class="modules">
 
-        <div class="section-title">
-            <p>OUR SERVICES</p>
-            <h2>System Modules</h2>
-            <span>Everything you need to manage hospital appointments.</span>
-        </div>
+        <div class="side-info">
 
-        <div class="cards">
-
-            <div class="card">
-                <div class="card-icon">👤</div>
-                <h3>Patient Registration</h3>
-                <p>
-                    Register patients and manage their
-                    profile and login information.
-                </p>
-                <a href="patient.html">Manage Patients →</a>
+            <div class="mini-card">
+                <span class="mini-icon">🔐</span>
+                <div>
+                    <h3>Secure Profiles</h3>
+                    <p>Organized patient information.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="card-icon">👨‍⚕️</div>
-                <h3>Doctor Management</h3>
-                <p>
-                    Manage doctor information, departments
-                    and available medical specialists.
-                </p>
-                <a href="doctor.html">View Doctors →</a>
+            <div class="mini-card">
+                <span class="mini-icon">📱</span>
+                <div>
+                    <h3>Easy Access</h3>
+                    <p>Quickly manage patient records.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="card-icon">📅</div>
-                <h3>Appointment Scheduling</h3>
-                <p>
-                    Schedule hospital appointments between
-                    patients and doctors easily.
-                </p>
-                <a href="appointment.html">Book Appointment →</a>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">📋</div>
-                <h3>Appointment History</h3>
-                <p>
-                    View previous appointments and keep
-                    track of patient appointment records.
-                </p>
-                <a href="history.html">View History →</a>
+            <div class="mini-card">
+                <span class="mini-icon">✓</span>
+                <div>
+                    <h3>Simple Registration</h3>
+                    <p>Fast and convenient process.</p>
+                </div>
             </div>
 
         </div>
-    </section>
 
-    <section class="info">
+    </div>
 
-        <div class="info-box">
-            <div class="info-icon">🩺</div>
-            <div>
-                <h3>Patient Care</h3>
-                <p>Organized patient information and appointment management.</p>
-            </div>
+</section>
+
+
+<section class="section doctors-section" id="doctors">
+
+    <div class="section-heading center">
+        <span>02 · OUR MEDICAL TEAM</span>
+        <h2>Meet Our Doctors</h2>
+        <p>
+            Experienced healthcare professionals dedicated to your care.
+        </p>
+    </div>
+
+    <div class="doctor-grid">
+
+        <div class="doctor-profile">
+            <div class="profile-icon">👨‍⚕️</div>
+            <h3>Dr. Michael Brown</h3>
+            <p>Cardiologist</p>
+            <span>★ 4.9 · 12 Years Experience</span>
+            <button>View Profile</button>
         </div>
 
-        <div class="info-box">
-            <div class="info-icon">⏰</div>
-            <div>
-                <h3>Easy Scheduling</h3>
-                <p>Quickly schedule and manage hospital appointments.</p>
-            </div>
+        <div class="doctor-profile">
+            <div class="profile-icon">👩‍⚕️</div>
+            <h3>Dr. Emily Davis</h3>
+            <p>Neurologist</p>
+            <span>★ 4.8 · 10 Years Experience</span>
+            <button>View Profile</button>
         </div>
 
-        <div class="info-box">
-            <div class="info-icon">🔒</div>
-            <div>
-                <h3>Secure Management</h3>
-                <p>Keep hospital records organized and accessible.</p>
-            </div>
+        <div class="doctor-profile">
+            <div class="profile-icon">👨‍⚕️</div>
+            <h3>Dr. James Wilson</h3>
+            <p>Orthopedic Specialist</p>
+            <span>★ 4.9 · 15 Years Experience</span>
+            <button>View Profile</button>
         </div>
 
-    </section>
+        <div class="doctor-profile">
+            <div class="profile-icon">👩‍⚕️</div>
+            <h3>Dr. Sophia Taylor</h3>
+            <p>Dermatologist</p>
+            <span>★ 4.7 · 8 Years Experience</span>
+            <button>View Profile</button>
+        </div>
 
-    <footer>
+    </div>
+
+</section>
+
+
+<section class="section appointment-section" id="appointments">
+
+    <div class="section-heading">
+        <span>03 · APPOINTMENT SERVICES</span>
+        <h2>Schedule an Appointment</h2>
+        <p>
+            Book your appointment with our healthcare specialists.
+        </p>
+    </div>
+
+    <div class="appointment-box">
+
+        <div class="appointment-info">
+
+            <div class="calendar-icon">📅</div>
+
+            <h3>Book Your Visit</h3>
+
+            <p>
+                Select your preferred doctor, date and time
+                to schedule your hospital appointment.
+            </p>
+
+            <div class="appointment-feature">
+                <span>✓</span>
+                Easy scheduling
+            </div>
+
+            <div class="appointment-feature">
+                <span>✓</span>
+                Flexible timings
+            </div>
+
+            <div class="appointment-feature">
+                <span>✓</span>
+                Doctor availability
+            </div>
+
+        </div>
+
+
+        <div class="appointment-form">
+
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter patient name">
+
+            <label>Select Doctor</label>
+            <select>
+                <option>Choose a doctor</option>
+                <option>Dr. Michael Brown - Cardiology</option>
+                <option>Dr. Emily Davis - Neurology</option>
+                <option>Dr. James Wilson - Orthopedics</option>
+                <option>Dr. Sophia Taylor - Dermatology</option>
+            </select>
+
+            <div class="form-row">
+
+                <div>
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label>Time</label>
+                    <input type="time">
+                </div>
+
+            </div>
+
+            <button class="book-btn">
+                Confirm Appointment
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section history-section" id="history">
+
+    <div class="section-heading center">
+        <span>04 · MEDICAL RECORDS</span>
+        <h2>Appointment History</h2>
+        <p>
+            Keep track of your previous and upcoming appointments.
+        </p>
+    </div>
+
+    <div class="history-table">
+
+        <div class="table-head">
+            <span>Patient</span>
+            <span>Doctor</span>
+            <span>Department</span>
+            <span>Date</span>
+            <span>Status</span>
+        </div>
+
+        <div class="table-row">
+            <span>Rahul Sharma</span>
+            <span>Dr. Michael Brown</span>
+            <span>Cardiology</span>
+            <span>10 Sep 2026</span>
+            <b class="completed">Completed</b>
+        </div>
+
+        <div class="table-row">
+            <span>Ananya Reddy</span>
+            <span>Dr. Emily Davis</span>
+            <span>Neurology</span>
+            <span>12 Sep 2026</span>
+            <b class="upcoming">Upcoming</b>
+        </div>
+
+        <div class="table-row">
+            <span>Vikram Kumar</span>
+            <span>Dr. James Wilson</span>
+            <span>Orthopedics</span>
+            <span>15 Sep 2026</span>
+            <b class="upcoming">Upcoming</b>
+        </div>
+
+        <div class="table-row">
+            <span>Priya Singh</span>
+            <span>Dr. Sophia Taylor</span>
+            <span>Dermatology</span>
+            <span>05 Sep 2026</span>
+            <b class="completed">Completed</b>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <div>
+        <span>NEED MEDICAL ASSISTANCE?</span>
+        <h2>Take care of your health today.</h2>
+        <p>
+            Schedule an appointment with our trusted medical professionals.
+        </p>
+    </div>
+
+    <a href="#appointments">
+        Book Appointment →
+    </a>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        <div class="logo-icon">✚</div>
         <div>
-            <strong>🏥 MediCare Hospital</strong>
-            <p>Hospital Appointment Management System</p>
+            <h2>MediCare</h2>
+            <p>Hospital Management System</p>
         </div>
+    </div>
 
-        <div>
-            <p>© 2026 Hospital Management System</p>
-        </div>
-    </footer>
+    <div class="footer-links">
+        <span>Patient Care</span>
+        <span>Doctor Management</span>
+        <span>Appointments</span>
+        <span>Medical Records</span>
+    </div>
+
+    <div class="copyright">
+        © 2026 MediCare Hospital. All Rights Reserved.
+    </div>
+
+</footer>
 
 </body>
 </html>
